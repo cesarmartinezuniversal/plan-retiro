@@ -28,28 +28,23 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-        @keyframes slideUp {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        .animate-in { animation: slideUp 0.6s ease-out forwards; }
     </style>
 </head>
 <body class="min-h-screen flex flex-col items-center p-4 md:p-10">
-    <div class="max-w-4xl w-full space-y-8 animate-in">
+    <div class="max-w-4xl w-full space-y-8">
         
-        <!-- Header -->
+        <!-- Encabezado -->
         <header class="text-center space-y-4">
             <h2 class="text-blue-500 font-black tracking-[0.3em] text-xs uppercase">Patrimonio Estratégico</h2>
             <h1 class="text-3xl md:text-5xl font-extrabold leading-tight">
                 La Paradoja Financiera del <span class="gradient-text">"Perrihijo"</span>
             </h1>
             <p class="text-slate-400 text-lg max-w-2xl mx-auto">
-                ¿Estás financiando los lujos de hoy a costa de tu propia dignidad mañana?
+                ¿Estás financiando los lujos de hoy a costa de tu propia dignidad en el futuro?
             </p>
         </header>
 
-        <!-- KPI Grid -->
+        <!-- Indicadores -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div class="card-glass p-6 rounded-2xl text-center">
                 <i class="fa-solid fa-user-clock text-blue-400 text-2xl mb-3"></i>
@@ -68,52 +63,40 @@
             </div>
         </div>
 
-        <!-- Content Section -->
-        <div class="card-glass rounded-3xl overflow-hidden">
-            <div class="grid grid-cols-1 md:grid-cols-2">
-                <div class="p-8 space-y-6">
-                    <h3 class="text-2xl font-bold">El Precio de Procrastinar</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">
-                        A los 40 años, tu salud y la ausencia de gastos de crianza crean una <strong>"Ventana de Productividad"</strong>. Si esperas solo 7 años, el esfuerzo para la misma meta se duplica.
+        <!-- Sección de Gráfico Comparativo -->
+        <div class="card-glass rounded-3xl overflow-hidden p-8">
+            <h3 class="text-2xl font-bold mb-6">El Costo de la Procrastinación</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div class="space-y-4">
+                    <p class="text-slate-400 text-sm">
+                        A los 40 años, tu salud y productividad están en su punto máximo. Retrasar esta decisión solo 7 años <strong>duplica el esfuerzo mensual</strong> requerido para la misma meta.
                     </p>
-                    <div class="space-y-4">
-                        <div class="flex items-center space-x-3">
-                            <div class="w-2 h-2 rounded-full bg-green-500"></div>
-                            <p class="text-sm"><strong>Hoy (40 años):</strong> ~$208 USD/mes</p>
-                        </div>
-                        <div class="flex items-center space-x-3">
-                            <div class="w-2 h-2 rounded-full bg-red-500"></div>
-                            <p class="text-sm"><strong>Mañana (47 años):</strong> ~$425 USD/mes</p>
-                        </div>
+                    <div class="flex items-center space-x-3">
+                        <div class="w-4 h-4 bg-emerald-500 rounded"></div>
+                        <p class="text-sm"><strong>Hoy (40 años):</strong> ~$208 USD/mes</p>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <div class="w-4 h-4 bg-rose-500 rounded"></div>
+                        <p class="text-sm"><strong>Tarde (47 años):</strong> ~$425 USD/mes</p>
                     </div>
                 </div>
-                <!-- Visual Graph -->
-                <div class="bg-slate-800/50 p-8 flex items-end justify-center space-x-6 h-64 md:h-auto">
-                    <div class="flex flex-col items-center space-y-2">
-                        <div class="w-12 bg-blue-500 rounded-t-lg" style="height: 80px;"></div>
-                        <span class="text-[10px] text-slate-500 font-bold">40 AÑOS</span>
-                    </div>
-                    <div class="flex flex-col items-center space-y-2">
-                        <div class="w-12 bg-red-500 rounded-t-lg" style="height: 160px;"></div>
-                        <span class="text-[10px] text-slate-500 font-bold">47 AÑOS</span>
-                    </div>
+                <!-- Gráfico simple -->
+                <div class="flex items-end justify-center space-x-8 bg-slate-800/30 p-6 rounded-xl h-48">
+                    <div class="w-16 bg-emerald-500 rounded-t-lg" style="height: 40%"></div>
+                    <div class="w-16 bg-rose-500 rounded-t-lg" style="height: 85%"></div>
                 </div>
             </div>
         </div>
 
-        <!-- CTA Section -->
-        <div class="text-center space-y-6 pt-4">
+        <!-- Botón de WhatsApp -->
+        <div class="text-center space-y-6">
             <p class="text-slate-500 italic text-sm">"Tu yo del futuro depende de la decisión que tomes hoy."</p>
-            
-            <!-- REEMPLAZA EL NÚMERO ABAJO (CÓDIGO DE PAÍS + NÚMERO) -->
-            <a href="https://wa.me/573000000000?text=Hola%20C%C3%A9sar,%20vi%20tu%20infograf%C3%ADa%20y%20quiero%20mi%20proyecci%C3%B3n%20personalizada." 
-               target="_blank"
-               class="inline-flex items-center justify-center px-8 py-4 bg-blue-600 text-white font-bold rounded-xl hover:bg-blue-500 transition-all shadow-lg shadow-blue-500/20 group">
+            <a href="https://wa.me/573105581234?text=Hola%20C%C3%A9sar,%20quiero%20mi%20proyecci%C3%B3n%20personalizada." 
+               class="inline-flex items-center justify-center px-10 py-5 bg-blue-600 text-white font-black rounded-2xl hover:bg-blue-500 transition-all shadow-xl shadow-blue-500/20">
                 SOLICITAR MI PROYECCIÓN PRIVADA
-                <i class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+                <i class="fa-solid fa-arrow-right ml-3"></i>
             </a>
-            
-            <footer class="pt-10">
+            <footer class="pt-8">
                 <p class="text-[10px] text-slate-600 uppercase tracking-widest font-bold">
                     César Augusto Martínez | Estratega Patrimonial
                 </p>
