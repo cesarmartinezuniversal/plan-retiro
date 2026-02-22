@@ -12,6 +12,7 @@
             font-family: 'Inter', sans-serif; 
             background-color: #0f172a; 
             color: #f8fafc;
+            margin: 0;
         }
         .card-glass { 
             background: rgba(30, 41, 59, 0.7); 
@@ -19,9 +20,9 @@
             border: 1px solid rgba(255, 255, 255, 0.1); 
             transition: all 0.3s ease;
         }
-        .card-glass:hover { 
-            border-color: rgba(59, 130, 246, 0.5); 
-            transform: translateY(-4px);
+        .card-glass:hover {
+            transform: translateY(-5px);
+            border-color: rgba(59, 130, 246, 0.5);
         }
         .gradient-text {
             background: linear-gradient(135deg, #3b82f6, #8b5cf6);
@@ -30,78 +31,67 @@
         }
     </style>
 </head>
-<body class="min-h-screen flex flex-col items-center p-4 md:p-10">
-    <div class="max-w-4xl w-full space-y-8">
+<body class="min-h-screen p-4 md:p-10 flex flex-col items-center">
+    <div class="max-w-4xl w-full space-y-12">
         
         <!-- Encabezado -->
         <header class="text-center space-y-4">
-            <h2 class="text-blue-500 font-black tracking-[0.3em] text-xs uppercase">Patrimonio Estratégico</h2>
-            <h1 class="text-3xl md:text-5xl font-extrabold leading-tight">
-                La Paradoja Financiera del <span class="gradient-text">"Perrihijo"</span>
+            <h2 class="text-blue-500 font-black tracking-widest text-sm uppercase">Patrimonio Estratégico</h2>
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight">
+                La Paradoja del <span class="gradient-text">Perrihijo</span>
             </h1>
-            <p class="text-slate-400 text-lg max-w-2xl mx-auto">
-                ¿Estás financiando los lujos de hoy a costa de tu propia dignidad en el futuro?
+            <p class="text-slate-400 text-lg max-w-2xl mx-auto italic">
+                "¿Estás financiando los lujos de hoy a costa de tu dignidad de mañana?"
             </p>
         </header>
 
-        <!-- Indicadores -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <div class="card-glass p-6 rounded-2xl text-center">
-                <i class="fa-solid fa-user-clock text-blue-400 text-2xl mb-3"></i>
-                <p class="text-slate-500 text-xs uppercase font-bold">Edad Óptima</p>
-                <p class="text-2xl font-bold">40 Años</p>
+        <!-- Sección de Indicadores -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="card-glass p-6 rounded-3xl text-center">
+                <i class="fa-solid fa-user-clock text-blue-400 text-3xl mb-4"></i>
+                <p class="text-slate-400 text-xs font-bold uppercase tracking-wider">Edad Crítica</p>
+                <p class="text-3xl font-bold">40 Años</p>
             </div>
-            <div class="card-glass p-6 rounded-2xl text-center border-b-4 border-blue-500">
-                <i class="fa-solid fa-bullseye text-green-400 text-2xl mb-3"></i>
-                <p class="text-slate-500 text-xs uppercase font-bold">Meta Garantizada</p>
-                <p class="text-2xl font-bold">$45,000 <span class="text-sm font-normal text-slate-500 italic">USD</span></p>
+            <div class="card-glass p-6 rounded-3xl text-center border-b-4 border-blue-500">
+                <i class="fa-solid fa-bullseye text-green-400 text-3xl mb-4"></i>
+                <p class="text-slate-400 text-xs font-bold uppercase tracking-wider">Meta Blindaje</p>
+                <p class="text-3xl font-bold">$45,000 <span class="text-sm font-light">USD</span></p>
             </div>
-            <div class="card-glass p-6 rounded-2xl text-center">
-                <i class="fa-solid fa-chart-line text-purple-400 text-2xl mb-3"></i>
-                <p class="text-slate-500 text-xs uppercase font-bold">Rendimiento</p>
-                <p class="text-2xl font-bold">2.5% <span class="text-sm font-normal text-slate-500 italic">Anual</span></p>
+            <div class="card-glass p-6 rounded-3xl text-center">
+                <i class="fa-solid fa-chart-line text-purple-400 text-3xl mb-4"></i>
+                <p class="text-slate-400 text-xs font-bold uppercase tracking-wider">Rendimiento</p>
+                <p class="text-3xl font-bold">2.5% <span class="text-sm font-light">Anual</span></p>
             </div>
         </div>
 
-        <!-- Sección de Gráfico Comparativo -->
-        <div class="card-glass rounded-3xl overflow-hidden p-8">
-            <h3 class="text-2xl font-bold mb-6">El Costo de la Procrastinación</h3>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                <div class="space-y-4">
-                    <p class="text-slate-400 text-sm">
-                        A los 40 años, tu salud y productividad están en su punto máximo. Retrasar esta decisión solo 7 años <strong>duplica el esfuerzo mensual</strong> requerido para la misma meta.
-                    </p>
-                    <div class="flex items-center space-x-3">
-                        <div class="w-4 h-4 bg-emerald-500 rounded"></div>
-                        <p class="text-sm"><strong>Hoy (40 años):</strong> ~$208 USD/mes</p>
-                    </div>
-                    <div class="flex items-center space-x-3">
-                        <div class="w-4 h-4 bg-rose-500 rounded"></div>
-                        <p class="text-sm"><strong>Tarde (47 años):</strong> ~$425 USD/mes</p>
-                    </div>
+        <!-- Sección de Comparativa -->
+        <div class="card-glass rounded-3xl overflow-hidden">
+            <div class="grid grid-cols-1 md:grid-cols-2">
+                <div class="p-8 bg-blue-600/10 space-y-4">
+                    <h3 class="text-xl font-bold text-blue-400">Escenario A: Acción Hoy</h3>
+                    <p class="text-slate-300 text-sm">Empezando a los 40 años para asegurar tu futuro con aportaciones mensuales mínimas.</p>
+                    <div class="text-4xl font-black">$208 <span class="text-xs font-normal text-slate-500">USD / mes</span></div>
                 </div>
-                <!-- Gráfico simple -->
-                <div class="flex items-end justify-center space-x-8 bg-slate-800/30 p-6 rounded-xl h-48">
-                    <div class="w-16 bg-emerald-500 rounded-t-lg" style="height: 40%"></div>
-                    <div class="w-16 bg-rose-500 rounded-t-lg" style="height: 85%"></div>
+                <div class="p-8 bg-red-600/5 space-y-4 border-l border-white/5">
+                    <h3 class="text-xl font-bold text-red-400">Escenario B: Procrastinación</h3>
+                    <p class="text-slate-300 text-sm">El costo de esperar a los 47 años. El esfuerzo se duplica por el tiempo perdido.</p>
+                    <div class="text-4xl font-black text-slate-500">$365 <span class="text-xs font-normal">USD / mes</span></div>
                 </div>
             </div>
         </div>
 
         <!-- Botón de WhatsApp -->
-        <div class="text-center space-y-6">
-            <p class="text-slate-500 italic text-sm">"Tu yo del futuro depende de la decisión que tomes hoy."</p>
-            <a href="https://wa.me/573105581234?text=Hola%20C%C3%A9sar,%20quiero%20mi%20proyecci%C3%B3n%20personalizada." 
-               class="inline-flex items-center justify-center px-10 py-5 bg-blue-600 text-white font-black rounded-2xl hover:bg-blue-500 transition-all shadow-xl shadow-blue-500/20">
-                SOLICITAR MI PROYECCIÓN PRIVADA
-                <i class="fa-solid fa-arrow-right ml-3"></i>
+        <div class="text-center pt-8">
+            <a href="https://wa.me/573105581234?text=Hola%20C%C3%A9sar,%20quiero%20conocer%20mi%20proyecci%C3%B3n%20de%20retiro%20personalizada." 
+               class="inline-flex items-center justify-center px-10 py-5 bg-blue-600 text-white font-bold rounded-2xl hover:bg-blue-500 hover:scale-105 transition-all shadow-xl shadow-blue-500/20">
+                <i class="fa-brands fa-whatsapp mr-3 text-2xl"></i>
+                CONSTRUIR MI BLINDAJE DE DIGNIDAD
             </a>
-            <footer class="pt-8">
-                <p class="text-[10px] text-slate-600 uppercase tracking-widest font-bold">
-                    César Augusto Martínez | Estratega Patrimonial
-                </p>
-            </footer>
+            <p class="mt-8 text-[10px] text-slate-600 uppercase font-bold tracking-[0.4em]">
+                César Augusto Martínez | Estratega en Soberanía Patrimonial
+            </p>
         </div>
+
     </div>
 </body>
 </html>
